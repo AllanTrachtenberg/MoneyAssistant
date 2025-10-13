@@ -114,6 +114,37 @@ docs(readme): update installation instructions
 2. **Use descriptive titles** that explain what the PR accomplishes
 3. **Include a summary** of changes made
 4. **Ensure tests pass** before requesting review
+5. **Use the PR template** (automatically loaded when creating PRs)
+6. **Complete the checklist** before requesting review
+
+#### PR Template
+
+All pull requests automatically use the template (`.github/pull_request_template.md`) which includes:
+
+```markdown
+## Description
+Brief description of what this PR accomplishes.
+
+## Changes Made
+- List specific changes made
+- Each change should be clear and concise
+
+## Related Issue
+Closes #
+
+## Checklist
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my own code
+- [ ] I have tested my changes
+- [ ] I have updated documentation if needed
+```
+
+#### Linking PRs to Issues
+
+**Use closing keywords in the "Related Issue" section:**
+- `Closes #12` - Automatically closes issue when PR merges
+- `Fixes #23` - Same as closes, good for bug fixes
+- `Resolves #45` - Same as closes, good for feature requests
 
 ### Merge Strategy
 
