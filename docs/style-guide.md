@@ -110,12 +110,38 @@ docs(readme): update installation instructions
 
 ### Pull Request Guidelines
 
-1. **Reference the issue** in the PR description using `#<issue-number>`
-2. **Use descriptive titles** that explain what the PR accomplishes
-3. **Include a summary** of changes made
-4. **Ensure tests pass** before requesting review
-5. **Use the PR template** (automatically loaded when creating PRs)
-6. **Complete the checklist** before requesting review
+1. **Use clear, descriptive PR titles** that explain what the PR accomplishes from a user/business perspective
+2. **Reference the issue** in the PR description using closing keywords
+3. **Include a summary** of changes made in the description
+4. **Use the PR template** (automatically loaded when creating PRs)
+5. **Complete the checklist** before requesting review
+6. **Ensure tests pass** before requesting review
+7. **Self-review your code** before submitting the PR
+
+#### PR Title Guidelines
+
+**Use conventional commit format for PR titles** - follow the same pattern as commit messages:
+
+```
+<type>(<scope>): <description>
+```
+
+```
+✅ Good PR Titles:
+feat(expenses): add expense categories functionality
+fix(auth): resolve login validation errors
+perf(dashboard): improve loading performance
+docs(readme): update installation instructions
+refactor(api): restructure expense endpoints
+
+❌ Avoid in PR titles:
+feat(expenses): add categories (#12)       # Don't include issue numbers
+Add expense categories functionality       # Missing type and scope
+Updates and fixes                          # Too vague
+Fix stuff                                  # Not descriptive
+```
+
+**Note:** Issue numbers belong in the PR description (`Closes #12`), not in the title. This avoids confusion with the automatic PR number that GitHub assigns.
 
 #### PR Template
 
