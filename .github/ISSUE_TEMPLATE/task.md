@@ -16,4 +16,4 @@ Description of the technical work to be completed.
 
 ## Notes
 
-Any additional details not covered in previous sections 
+Any additional details not covered in previous sections.

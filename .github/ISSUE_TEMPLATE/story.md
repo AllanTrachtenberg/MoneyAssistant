@@ -20,4 +20,4 @@ Define the specific conditions that must be met for this story to be considered 
 
 ## Notes
 
-Any additional details not covered in previous sections 
+Any additional details not covered in previous sections.

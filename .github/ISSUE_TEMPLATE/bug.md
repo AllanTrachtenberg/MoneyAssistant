@@ -8,8 +8,8 @@ assignees: ''
 
 ## Bug Description
 
-Description of the bug. Add as much descriptions as you can.
+Description of the bug. Add as much description as you can.
 
 ## Notes
 
-Any additional details not covered in previous sections 
+Any additional details not covered in previous sections.
