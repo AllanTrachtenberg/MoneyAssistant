@@ -31,6 +31,14 @@ This document outlines the coding standards, naming conventions, and best practi
   - [Code Comments](#code-comments)
   - [README and Documentation](#readme-and-documentation)
   - [Issue and PR Templates](#issue-and-pr-templates)
+    - [Available Issue Templates](#available-issue-templates)
+    - [Template Configuration](#template-configuration)
+    - [Story vs Task Guidelines](#story-vs-task-guidelines)
+    - [How to Use Issue Templates](#how-to-use-issue-templates)
+    - [Writing Quality Issues](#writing-quality-issues)
+    - [Issue Labels and Organization](#issue-labels-and-organization)
+    - [Template Benefits](#template-benefits)
+    - [PR Template Usage](#pr-template-usage)
 - [Enforcement](#enforcement)
 
 ## Git and Branching Conventions
@@ -317,6 +325,82 @@ def calculate_period_total(expenses, start_date, end_date):
 ### Issue and PR Templates
 
 Use consistent templates for issues and pull requests to maintain quality and completeness of information.
+
+#### Available Issue Templates
+
+We provide structured templates for different types of issues in the `.github/ISSUE_TEMPLATE/` directory:
+
+**Story Template** (`story.md`) - Use for describing features from the user's perspective:
+- Follows the standard "As a... I want... So that..." format
+- Includes acceptance criteria with Given/When/Then scenarios
+- Tagged with `story` label
+
+**Task Template** (`task.md`) - Use for technical implementation work:
+- Describes specific technical work to be completed
+- Links to parent user stories
+- Tagged with `task` label
+
+**Bug Report Template** (`bug_report.md`) - Use when reporting problems or errors:
+- Structured format for reproducible bug reports
+- Tagged with `bug` label
+
+#### Template Configuration
+
+The `.github/ISSUE_TEMPLATE/config.yml` file configures the issue creation experience:
+- **Enforces template usage** by disabling blank issues
+- **Provides alternative contact methods** for different types of requests
+- **Guides users** to appropriate channels (Discussions, email for security)
+
+#### Story vs Task Guidelines
+
+**Use Story Template when:**
+- Describing functionality from user's perspective
+- Defining user value
+- Planning what features to build
+
+
+**Use Task Template when:**
+- Breaking down stories into implementable work
+- Defining technical implementation details
+- Assigning specific development work
+- Tracking progress on technical components
+
+**Relationship Example:**
+```
+Story #15: Add expense categorization functionality
+├── Task #16: Create Category database model and API endpoints
+├── Task #17: Add category dropdown to expense form UI
+├── Task #18: Create category management page (CRUD operations)
+└── Task #19: Add spending by category chart component
+```
+
+#### How to Use Issue Templates
+
+1. **Navigate to Issues** in the GitHub repository
+2. **Click "New Issue"** to see template selection menu
+3. **Choose appropriate template** based on your need:
+   - **Story** - For user-focused features
+   - **Task** - For technical implementation
+   - **Bug Report** - For problems or errors
+4. **Fill out all sections** - Don't delete template structure
+5. **Add relevant labels** if not automatically applied
+6. **Link related issues** using `#issue-number` syntax
+
+#### Template Benefits
+
+- **Consistent information** - Ensures all necessary details are provided
+- **Faster resolution** - Structured information helps respond quickly
+- **Better organization** - Automatic labeling helps categorize issues
+- **Professional appearance** - Shows the project follows best practices
+- **Clear workflow** - Separates user requirements from technical implementation
+
+#### PR Template Usage
+
+All pull requests automatically use the template (`.github/pull_request_template.md`) which includes:
+- **Description** - Brief overview of changes
+- **Changes Made** - Specific list of modifications
+- **Related Issue** - Link using closing keywords (`Closes #12`)
+- **Checklist** - Quality control before review
 
 ---
 
