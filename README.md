@@ -49,6 +49,8 @@ We welcome contributions from the community! This project is perfect for practic
 
 ### How to Contribute
 
+**Before contributing, please review our [style guide](docs/style-guide.md) for coding and documentation standards.**
+
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/your-feature-name`
 3. Make your changes and commit: `git commit -m 'Add some feature'`
