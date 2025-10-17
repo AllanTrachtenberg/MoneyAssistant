@@ -1,7 +1,7 @@
 # MoneyAssistant
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status: Work in Progress](https://img.shields.io/badge/status-work--in--progress-orange)]()
+[![Status: Work in Progress](https://img.shields.io/badge/status-work--in--progress-orange)](https://github.com/AllanTrachtenberg/MoneyAssistant/blob/main/docs/project-spec.md)
 
 A personal financial management application that helps users analyze their spending patterns, visualize financial trends, and achieve their financial goals by processing bank transaction data from Excel files.
 
@@ -32,7 +32,7 @@ This project is currently in active development and welcomes contributions at an
 - **Language**: Python
 - **Data Processing**: Pandas, NumPy
 - **Visualization**: Matplotlib, Seaborn
-- **Web Framework**: Flask/Django 
+- **Web Framework**: Flask/Django
 - **Database**: SQLite/PostgreSQL
 
 ## 🤝 Contributing
