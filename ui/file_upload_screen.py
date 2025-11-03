@@ -39,9 +39,10 @@ class FileUpload:
             ]
         )
         if file_path:
-            self.selected_file_path = file_path
+            self.selected_file_path = file_path.name
+            file_path.close()
             self.upload_label.config(
-                text=f"Selected: {file_path}"
+                text=f"Selected: {file_path.name}"
             )
 
     def show_file_upload_screen_frame(self) -> None:

@@ -16,6 +16,7 @@ class UiService:
             )
         except Exception as e:
             print(f"Unable to start UiService, error: {e}")
+            raise
 
     def start_app(self) -> None:
         """Start the app"""
