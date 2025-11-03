@@ -14,7 +14,7 @@ class MainWindow:
             self.file_upload_frame = None
             self.create_frames()
         except Exception as e:
-            print(f"Unable to initiliaze main window class, error:{e}")
+            print(f"Unable to initialize main window class, error:{e}")
 
     def create_root_window(self) -> None:
         """Creates the root app window"""
@@ -26,8 +26,14 @@ class MainWindow:
         """Add a close button to the main app window"""
         self.close_button = tk.Button(
             self.root, 
-            text="Close",
+            text="Close App",
             command=self.root.destroy
+        )
+        self.close_button.pack(
+            side=tk.BOTTOM,
+            anchor=tk.SE,
+            padx=10,
+            pady=10
         )
     
     def build_base_dialog(self) -> None:
@@ -48,6 +54,3 @@ class MainWindow:
         """Remove frames from window"""
         self.initial_frame.pack_forget()
         self.file_upload_frame.pack_forget()
-
-if __name__ == "__main__":
-    main_window = MainWindow()
